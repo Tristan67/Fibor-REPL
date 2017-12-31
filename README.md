@@ -1,8 +1,22 @@
 # Fibor-REPL
 An iOS app to exercise and demonstrate the functionality of the [Fibor framework](https://github.com/Tristan67/Fibor). 
 
-## Create App Project
+## Download the App Project
 1. Download the project. 
 2. Open the Xcode project file ("Fibor-REPL.xcodeproj") with Xcode. 
-3. In the Navigation area, delete the sub Xcode project called "Fibor.xcodeproj". 
-4. 
+
+## Download the Fibor Framework
+1. Download the Fibor framework project located [here](https://github.com/Tristan67/Fibor). 
+2. Open the downloaded folder in Finder and navigate to "Fibor.xcodeproj".
+
+## Link the App and Framework
+1. In the Navigation area of the Xcode window, delete the sub Xcode project called "Fibor.xcodeproj". 
+
+2. Drag the "Fibor.xcodeproj" file from Finder under the "Fibor-REPL.xcodeproj" in the Navigation area. 
+
+3. Click on the "Fibor-REPL.xcodeproj" file. 
+4. In the Editor area, select the Fibor REPL target and select the General tab at the top. 
+5. In the Navigation area, navigate to the "Fibor.framework" (Fibor.xcodeproj > Products > Fibor.framework). 
+6. Drag the "Fibor.framework" to the Embedded Binaries section in the Editor area. 
+
+7. The projects are linked and the App is ready to build and run! 
