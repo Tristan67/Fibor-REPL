@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AE66FB21FED71D900705EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FB11FED71D900705EB8 /* AppDelegate.swift */; };
+		6AE66FB91FED71D900705EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE66FB81FED71D900705EB8 /* Assets.xcassets */; };
+		6AE66FBC1FED71D900705EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE66FBA1FED71D900705EB8 /* LaunchScreen.storyboard */; };
+		6AE66FC71FED71D900705EB8 /* Fibor_REPLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FC61FED71D900705EB8 /* Fibor_REPLTests.swift */; };
+		6AE66FD21FED71D900705EB8 /* Fibor_REPLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FD11FED71D900705EB8 /* Fibor_REPLUITests.swift */; };
+		6AE66FE91FED72AC00705EB8 /* Fibor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE66FE61FED726300705EB8 /* Fibor.framework */; };
+		6AE66FEA1FED72AC00705EB8 /* Fibor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE66FE61FED726300705EB8 /* Fibor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AE66FF01FED738A00705EB8 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FEF1FED738A00705EB8 /* MenuVC.swift */; };
+		6AE66FF21FED744500705EB8 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FF11FED744500705EB8 /* UserDefaults+Extension.swift */; };
+		6AE66FF41FED748600705EB8 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FF31FED748600705EB8 /* FileManager+Extension.swift */; };
+		6AE66FF61FED7D0500705EB8 /* EditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FF51FED7D0500705EB8 /* EditorVC.swift */; };
+		6AE66FF81FED81B700705EB8 /* REPLVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FF71FED81B700705EB8 /* REPLVC.swift */; };
+		6AE66FFA1FED84DB00705EB8 /* ConsoleLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FF91FED84DB00705EB8 /* ConsoleLogCell.swift */; };
+		6AE66FFE1FEDA57800705EB8 /* StoreInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE66FFD1FEDA57800705EB8 /* StoreInfoVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AE66FC31FED71D900705EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE66FA61FED71D900705EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE66FAD1FED71D900705EB8;
+			remoteInfo = "Fibor REPL";
+		};
+		6AE66FCE1FED71D900705EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE66FA61FED71D900705EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE66FAD1FED71D900705EB8;
+			remoteInfo = "Fibor REPL";
+		};
+		6AE66FE51FED726300705EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE66FE01FED726300705EB8 /* Fibor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A7A599F1F92D74F00B3461D;
+			remoteInfo = Fibor;
+		};
+		6AE66FE71FED726300705EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE66FE01FED726300705EB8 /* Fibor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A7A59A81F92D74F00B3461D;
+			remoteInfo = FiborTests;
+		};
+		6AE66FEB1FED72AC00705EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE66FE01FED726300705EB8 /* Fibor.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A7A599E1F92D74F00B3461D;
+			remoteInfo = Fibor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6AE66FED1FED72AC00705EB8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6AE66FEA1FED72AC00705EB8 /* Fibor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6AE66FAE1FED71D900705EB8 /* Fibor REPL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fibor REPL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE66FB11FED71D900705EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AE66FB81FED71D900705EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AE66FBB1FED71D900705EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AE66FBD1FED71D900705EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE66FC21FED71D900705EB8 /* Fibor REPLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fibor REPLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE66FC61FED71D900705EB8 /* Fibor_REPLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibor_REPLTests.swift; sourceTree = "<group>"; };
+		6AE66FC81FED71D900705EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE66FCD1FED71D900705EB8 /* Fibor REPLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fibor REPLUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE66FD11FED71D900705EB8 /* Fibor_REPLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibor_REPLUITests.swift; sourceTree = "<group>"; };
+		6AE66FD31FED71D900705EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE66FE01FED726300705EB8 /* Fibor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fibor.xcodeproj; path = ../Fibor/Fibor.xcodeproj; sourceTree = "<group>"; };
+		6AE66FEF1FED738A00705EB8 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		6AE66FF11FED744500705EB8 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		6AE66FF31FED748600705EB8 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		6AE66FF51FED7D0500705EB8 /* EditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorVC.swift; sourceTree = "<group>"; };
+		6AE66FF71FED81B700705EB8 /* REPLVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPLVC.swift; sourceTree = "<group>"; };
+		6AE66FF91FED84DB00705EB8 /* ConsoleLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogCell.swift; sourceTree = "<group>"; };
+		6AE66FFD1FEDA57800705EB8 /* StoreInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AE66FAB1FED71D900705EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE66FE91FED72AC00705EB8 /* Fibor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE66FBF1FED71D900705EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE66FCA1FED71D900705EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AE66FA51FED71D900705EB8 = {
+			isa = PBXGroup;
+			children = (
+				6AE66FE01FED726300705EB8 /* Fibor.xcodeproj */,
+				6AE66FB01FED71D900705EB8 /* Fibor REPL */,
+				6AE66FC51FED71D900705EB8 /* Fibor REPLTests */,
+				6AE66FD01FED71D900705EB8 /* Fibor REPLUITests */,
+				6AE66FAF1FED71D900705EB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AE66FAF1FED71D900705EB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AE66FAE1FED71D900705EB8 /* Fibor REPL.app */,
+				6AE66FC21FED71D900705EB8 /* Fibor REPLTests.xctest */,
+				6AE66FCD1FED71D900705EB8 /* Fibor REPLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AE66FB01FED71D900705EB8 /* Fibor REPL */ = {
+			isa = PBXGroup;
+			children = (
+				6AE66FF31FED748600705EB8 /* FileManager+Extension.swift */,
+				6AE66FF11FED744500705EB8 /* UserDefaults+Extension.swift */,
+				6AE66FB11FED71D900705EB8 /* AppDelegate.swift */,
+				6AE66FB81FED71D900705EB8 /* Assets.xcassets */,
+				6AE66FBA1FED71D900705EB8 /* LaunchScreen.storyboard */,
+				6AE66FBD1FED71D900705EB8 /* Info.plist */,
+				6AE66FEF1FED738A00705EB8 /* MenuVC.swift */,
+				6AE66FF51FED7D0500705EB8 /* EditorVC.swift */,
+				6AE66FF71FED81B700705EB8 /* REPLVC.swift */,
+				6AE66FF91FED84DB00705EB8 /* ConsoleLogCell.swift */,
+				6AE66FFD1FEDA57800705EB8 /* StoreInfoVC.swift */,
+			);
+			path = "Fibor REPL";
+			sourceTree = "<group>";
+		};
+		6AE66FC51FED71D900705EB8 /* Fibor REPLTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AE66FC61FED71D900705EB8 /* Fibor_REPLTests.swift */,
+				6AE66FC81FED71D900705EB8 /* Info.plist */,
+			);
+			path = "Fibor REPLTests";
+			sourceTree = "<group>";
+		};
+		6AE66FD01FED71D900705EB8 /* Fibor REPLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AE66FD11FED71D900705EB8 /* Fibor_REPLUITests.swift */,
+				6AE66FD31FED71D900705EB8 /* Info.plist */,
+			);
+			path = "Fibor REPLUITests";
+			sourceTree = "<group>";
+		};
+		6AE66FE11FED726300705EB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AE66FE61FED726300705EB8 /* Fibor.framework */,
+				6AE66FE81FED726300705EB8 /* FiborTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AE66FAD1FED71D900705EB8 /* Fibor REPL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE66FD61FED71D900705EB8 /* Build configuration list for PBXNativeTarget "Fibor REPL" */;
+			buildPhases = (
+				6AE66FAA1FED71D900705EB8 /* Sources */,
+				6AE66FAB1FED71D900705EB8 /* Frameworks */,
+				6AE66FAC1FED71D900705EB8 /* Resources */,
+				6AE66FED1FED72AC00705EB8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE66FEC1FED72AC00705EB8 /* PBXTargetDependency */,
+			);
+			name = "Fibor REPL";
+			productName = "Fibor REPL";
+			productReference = 6AE66FAE1FED71D900705EB8 /* Fibor REPL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AE66FC11FED71D900705EB8 /* Fibor REPLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE66FD91FED71D900705EB8 /* Build configuration list for PBXNativeTarget "Fibor REPLTests" */;
+			buildPhases = (
+				6AE66FBE1FED71D900705EB8 /* Sources */,
+				6AE66FBF1FED71D900705EB8 /* Frameworks */,
+				6AE66FC01FED71D900705EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE66FC41FED71D900705EB8 /* PBXTargetDependency */,
+			);
+			name = "Fibor REPLTests";
+			productName = "Fibor REPLTests";
+			productReference = 6AE66FC21FED71D900705EB8 /* Fibor REPLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AE66FCC1FED71D900705EB8 /* Fibor REPLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE66FDC1FED71D900705EB8 /* Build configuration list for PBXNativeTarget "Fibor REPLUITests" */;
+			buildPhases = (
+				6AE66FC91FED71D900705EB8 /* Sources */,
+				6AE66FCA1FED71D900705EB8 /* Frameworks */,
+				6AE66FCB1FED71D900705EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE66FCF1FED71D900705EB8 /* PBXTargetDependency */,
+			);
+			name = "Fibor REPLUITests";
+			productName = "Fibor REPLUITests";
+			productReference = 6AE66FCD1FED71D900705EB8 /* Fibor REPLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AE66FA61FED71D900705EB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tristan Barnes";
+				TargetAttributes = {
+					6AE66FAD1FED71D900705EB8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					6AE66FC11FED71D900705EB8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6AE66FAD1FED71D900705EB8;
+					};
+					6AE66FCC1FED71D900705EB8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6AE66FAD1FED71D900705EB8;
+					};
+				};
+			};
+			buildConfigurationList = 6AE66FA91FED71D900705EB8 /* Build configuration list for PBXProject "Fibor REPL" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AE66FA51FED71D900705EB8;
+			productRefGroup = 6AE66FAF1FED71D900705EB8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6AE66FE11FED726300705EB8 /* Products */;
+					ProjectRef = 6AE66FE01FED726300705EB8 /* Fibor.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6AE66FAD1FED71D900705EB8 /* Fibor REPL */,
+				6AE66FC11FED71D900705EB8 /* Fibor REPLTests */,
+				6AE66FCC1FED71D900705EB8 /* Fibor REPLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6AE66FE61FED726300705EB8 /* Fibor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Fibor.framework;
+			remoteRef = 6AE66FE51FED726300705EB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6AE66FE81FED726300705EB8 /* FiborTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FiborTests.xctest;
+			remoteRef = 6AE66FE71FED726300705EB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AE66FAC1FED71D900705EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE66FBC1FED71D900705EB8 /* LaunchScreen.storyboard in Resources */,
+				6AE66FB91FED71D900705EB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE66FC01FED71D900705EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE66FCB1FED71D900705EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AE66FAA1FED71D900705EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE66FFE1FEDA57800705EB8 /* StoreInfoVC.swift in Sources */,
+				6AE66FF41FED748600705EB8 /* FileManager+Extension.swift in Sources */,
+				6AE66FB21FED71D900705EB8 /* AppDelegate.swift in Sources */,
+				6AE66FF21FED744500705EB8 /* UserDefaults+Extension.swift in Sources */,
+				6AE66FFA1FED84DB00705EB8 /* ConsoleLogCell.swift in Sources */,
+				6AE66FF01FED738A00705EB8 /* MenuVC.swift in Sources */,
+				6AE66FF61FED7D0500705EB8 /* EditorVC.swift in Sources */,
+				6AE66FF81FED81B700705EB8 /* REPLVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE66FBE1FED71D900705EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE66FC71FED71D900705EB8 /* Fibor_REPLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE66FC91FED71D900705EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE66FD21FED71D900705EB8 /* Fibor_REPLUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AE66FC41FED71D900705EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AE66FAD1FED71D900705EB8 /* Fibor REPL */;
+			targetProxy = 6AE66FC31FED71D900705EB8 /* PBXContainerItemProxy */;
+		};
+		6AE66FCF1FED71D900705EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AE66FAD1FED71D900705EB8 /* Fibor REPL */;
+			targetProxy = 6AE66FCE1FED71D900705EB8 /* PBXContainerItemProxy */;
+		};
+		6AE66FEC1FED72AC00705EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fibor;
+			targetProxy = 6AE66FEB1FED72AC00705EB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AE66FBA1FED71D900705EB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE66FBB1FED71D900705EB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AE66FD41FED71D900705EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AE66FD51FED71D900705EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AE66FD71FED71D900705EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3858YT2TV2;
+				INFOPLIST_FILE = "Fibor REPL/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TristanBarnes.Fibor-REPL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AE66FD81FED71D900705EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3858YT2TV2;
+				INFOPLIST_FILE = "Fibor REPL/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TristanBarnes.Fibor-REPL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AE66FDA1FED71D900705EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3858YT2TV2;
+				INFOPLIST_FILE = "Fibor REPLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TristanBarnes.Fibor-REPLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fibor REPL.app/Fibor REPL";
+			};
+			name = Debug;
+		};
+		6AE66FDB1FED71D900705EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3858YT2TV2;
+				INFOPLIST_FILE = "Fibor REPLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TristanBarnes.Fibor-REPLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fibor REPL.app/Fibor REPL";
+			};
+			name = Release;
+		};
+		6AE66FDD1FED71D900705EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3858YT2TV2;
+				INFOPLIST_FILE = "Fibor REPLUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TristanBarnes.Fibor-REPLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fibor REPL";
+			};
+			name = Debug;
+		};
+		6AE66FDE1FED71D900705EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3858YT2TV2;
+				INFOPLIST_FILE = "Fibor REPLUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TristanBarnes.Fibor-REPLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fibor REPL";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AE66FA91FED71D900705EB8 /* Build configuration list for PBXProject "Fibor REPL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE66FD41FED71D900705EB8 /* Debug */,
+				6AE66FD51FED71D900705EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE66FD61FED71D900705EB8 /* Build configuration list for PBXNativeTarget "Fibor REPL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE66FD71FED71D900705EB8 /* Debug */,
+				6AE66FD81FED71D900705EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE66FD91FED71D900705EB8 /* Build configuration list for PBXNativeTarget "Fibor REPLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE66FDA1FED71D900705EB8 /* Debug */,
+				6AE66FDB1FED71D900705EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE66FDC1FED71D900705EB8 /* Build configuration list for PBXNativeTarget "Fibor REPLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE66FDD1FED71D900705EB8 /* Debug */,
+				6AE66FDE1FED71D900705EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AE66FA61FED71D900705EB8 /* Project object */;
+}
